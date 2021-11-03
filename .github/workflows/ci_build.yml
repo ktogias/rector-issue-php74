@@ -22,5 +22,7 @@ jobs:
           coverage: none
       - name: Checkout
         uses: actions/checkout@v2
+      - name: "Install dependencies"
+        run: "composer install --prefer-dist"
       - name: "Code analyze"
         run: vendor/bin/rector process src/Test.php --dry-run
