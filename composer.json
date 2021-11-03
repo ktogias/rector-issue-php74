@@ -1,0 +1,22 @@
+{
+    "name": "samsonasik/rector-issue-php74",
+    "autoload": {
+        "psr-4": {
+            "Samsonasik\\RectorIssuePhp74\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdul Malik Ikhsan",
+            "email": "samsonasik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "rector/rector": "dev-main"
+    }
+}
