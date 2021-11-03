@@ -1,4 +1,0 @@
-services:
-    defaultAnalysisParser:
-        factory: @currentPhpVersionRichParser
-        arguments!: []
