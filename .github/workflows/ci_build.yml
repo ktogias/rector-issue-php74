@@ -22,4 +22,5 @@ jobs:
           coverage: none
       - name: Checkout
         uses: actions/checkout@v2
-          bin/rector process src/Test.php --dry-run
+      - name: "Code analyze"
+        run: vendor/bin/rector process src/Test.php --dry-run
