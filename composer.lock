@@ -9,16 +9,16 @@
     "packages-dev": [
         {
             "name": "phpstan/phpstan",
-            "version": "1.0.2",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "e9e2a501102ba0b126b2f63a7f0a3b151056fe91"
+                "reference": "bcea0ae85868a89d5789c75f012c93129f842934"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e9e2a501102ba0b126b2f63a7f0a3b151056fe91",
-                "reference": "e9e2a501102ba0b126b2f63a7f0a3b151056fe91",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/bcea0ae85868a89d5789c75f012c93129f842934",
+                "reference": "bcea0ae85868a89d5789c75f012c93129f842934",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.0.2"
+                "source": "https://github.com/phpstan/phpstan/tree/1.1.2"
             },
             "funding": [
                 {
@@ -69,7 +69,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-03T16:09:51+00:00"
+            "time": "2021-11-09T12:41:09+00:00"
         },
         {
             "name": "rector/rector",
@@ -77,21 +77,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "8db8a4be7b606e491ba74f706965b946f7c9c9e8"
+                "reference": "0fea0fdc92c3cc78d2aaf84eb9edba90c62af05e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/8db8a4be7b606e491ba74f706965b946f7c9c9e8",
-                "reference": "8db8a4be7b606e491ba74f706965b946f7c9c9e8",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/0fea0fdc92c3cc78d2aaf84eb9edba90c62af05e",
+                "reference": "0fea0fdc92c3cc78d2aaf84eb9edba90c62af05e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1|^8.0",
-                "phpstan/phpstan": "^1.0"
+                "phpstan/phpstan": "^1.1.1"
             },
             "conflict": {
-                "phpstan/phpdoc-parser": "<=0.5.3",
-                "phpstan/phpstan": "<=0.12.99",
+                "phpstan/phpdoc-parser": "<1.2",
                 "rector/rector-cakephp": "*",
                 "rector/rector-doctrine": "*",
                 "rector/rector-laravel": "*",
@@ -108,7 +107,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.11-dev"
+                    "dev-main": "0.12-dev"
                 }
             },
             "autoload": {
@@ -131,7 +130,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-03T09:28:30+00:00"
+            "time": "2021-11-09T13:36:07+00:00"
         }
     ],
     "aliases": [],
