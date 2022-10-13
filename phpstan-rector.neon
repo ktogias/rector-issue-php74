@@ -1,0 +1,8 @@
+includes:
+  - phpstan.neon
+
+parameters:
+  strictRules:
+    allRules: true
+    disallowedConstructs: true
+    disallowedLooseComparison: true

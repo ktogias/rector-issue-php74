@@ -1,0 +1,25 @@
+includes:
+  - vendor/phpstan/phpstan-beberlei-assert/extension.neon
+  - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+  - vendor/phpstan/phpstan-doctrine/extension.neon
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+  level: 8
+  paths:
+    - .
+  excludePaths:
+    - vendor/*
+  checkDynamicProperties: true
+  checkGenericClassInNonGenericObjectType: false
+  checkMissingIterableValueType: false
+  strictRules:
+    allRules: true
+    disallowedConstructs: false
+    disallowedLooseComparison: false
+  ignoreErrors:
+    - '#^Access to an uninitialized readonly property Domain\\Application\\Application\:\:\$id\.$#'
+    - '#^Readonly property Domain\\Application\\Application\:\:\$id is assigned outside of the constructor\.$#'
+    - '#^Parameter \#2 \$data of method Curl\\Curl\:\:(put|delete)\(\) expects array, (string\|false)|(delete)? given\.$#'
+    - message: '#^Class Domain\\Event\\OaedSub2\\TrainingProgram\\Submission(Form|Admin) not found\.$#'
+      path: src/Application/Event/Impl/PersistenceStore.php
